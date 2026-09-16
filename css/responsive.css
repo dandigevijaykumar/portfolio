@@ -1,0 +1,256 @@
+/* ===============================
+   CSS Animations
+================================== */
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide Up */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Left */
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide Right */
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Zoom In */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Floating */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Rotate */
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Bounce */
+@keyframes bounce {
+    0%,20%,50%,80%,100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-18px);
+    }
+
+    60% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Gradient */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Typing Cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ===============================
+   Animation Classes
+================================== */
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.slide-up {
+    animation: slideUp 0.9s ease forwards;
+}
+
+.slide-left {
+    animation: slideLeft 1s ease forwards;
+}
+
+.slide-right {
+    animation: slideRight 1s ease forwards;
+}
+
+.zoom-in {
+    animation: zoomIn 0.8s ease forwards;
+}
+
+.float {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.rotate {
+    animation: rotate360 12s linear infinite;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+/* ===============================
+   Hover Effects
+================================== */
+
+.card,
+.project-card,
+.tool-card,
+.concept-card,
+.certificate,
+.edu-card,
+.hobby-card,
+.achievement-card {
+    transition: all 0.4s ease;
+}
+
+.card:hover,
+.project-card:hover,
+.tool-card:hover,
+.concept-card:hover,
+.certificate:hover,
+.edu-card:hover,
+.hobby-card:hover,
+.achievement-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+}
+
+/* Buttons */
+
+.btn {
+    transition: all 0.35s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Social Icons */
+
+.social-icons a,
+.footer-icons a,
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover,
+.footer-icons a:hover,
+.social-links a:hover {
+    transform: scale(1.25) rotate(10deg);
+}
+
+/* Logo */
+
+.logo img {
+    animation: floating 4s ease-in-out infinite;
+}
+
+/* Hero Image */
+
+.hero-image img {
+    animation: floating 5s ease-in-out infinite;
+}
+
+/* Scroll Button */
+
+#topBtn {
+    animation: pulse 2s infinite;
+}
+
+/* Progress Bar */
+
+.progress-bar {
+    animation: slideRight 2s ease;
+}
+
+/* Typing Cursor */
+
+#typing {
+    border-right: 3px solid #00bcd4;
+    animation: blink 0.8s infinite;
+}

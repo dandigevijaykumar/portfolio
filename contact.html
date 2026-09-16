@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Dandige Vijay Kumar</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <h2>Portfolio</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact">
+
+        <div class="contact-title" data-aos="fade-down">
+
+            <h1>Contact Me</h1>
+
+            <p>
+                Have a project in mind or want to connect?
+                Feel free to send me a message.
+            </p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+
+            <div class="contact-info" data-aos="fade-right">
+
+                <h2>Get In Touch</h2>
+
+                <div class="info">
+
+                    <i class="fas fa-user"></i>
+
+                    <div>
+                        <h4>Name</h4>
+                        <p>Dandige Vijay Kumar</p>
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <div>
+                        <h4>Email</h4>
+                        <p>dandigevijaykumer@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <i class="fas fa-phone"></i>
+
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 9347480776</p>
+                    </div>
+
+                </div>
+
+                <div class="info">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <div>
+                        <h4>Location</h4>
+                        <p>Hyderabad, Telangana, India</p>
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="mailto:dandigevijaykumer@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form" data-aos="fade-left">
+
+                <form id="contactForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Subject"
+                        required>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
+
+                    <button type="submit" class="btn">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MAP ================= -->
+
+    <section class="map-section" data-aos="zoom-in">
+
+        <h2>My Location</h2>
+
+        <iframe
+            src="https://www.google.com/maps?q=Hyderabad&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Dandige Vijay Kumar</h3>
+
+        <p>Python Full Stack Developer</p>
+
+        <div class="footer-icons">
+
+            <a href="https://github.com/dandigevijaykumar/"><i class="fab fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/dandige-vijay-kumar/"><i class="fab fa-linkedin"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="mailto:dandigevijaykumer@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <p>© 2026 Dandige Vijay Kumar. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- Back To Top -->
+
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+    <!-- JS -->
+
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>
